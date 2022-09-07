@@ -1,0 +1,29 @@
+#container{
+    width: 570px;
+    margin: 10px auto;
+}
+#check{
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+h1{
+    background-color: black;
+    color: #fff;
+    font-size: 14px ;
+    text-align: left;
+    padding: 20px;
+}
+h2{
+    color:red ;
+    font-size: 16px ;
+    
+}
+.bluetext{
+    color:blue ;
+    font-weight: bold ;
+}
+p{
+    font-size: 18px ;
+    line-height: 2 ;
+}

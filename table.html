@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="uft-8">
+        <title>table</title>
+        <style>
+            thead{
+                background-color: yellow;
+            }
+            tfoot{
+                background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1">
+            <caption>표 제목</caption>
+            <thead>
+                <tr>
+                    <th>필드명</th>
+                    <th>필드명2</th>
+                    <th>필드명3</th>
+                </tr>
+        </thead>
+        <tbody>
+                <tr>
+                <td>데이터데이터데이터</td>
+                <td colspan="2">데이터</td>
+            </tr>
+            <tr>
+                <td rowspan="2">3행 1열</td>
+                <td>3행 2열</td>
+                <td>3행 3열</td>
+            </tr>
+            <tr>
+                <td>4행 2열</td>
+                <td>4행 3열</td>
+            </tr>
+    </tbody>
+    <tfoot>
+        <td colspan="3">데이터 요약</td>
+    </tfoot>
+        </table>
+        <table border="1">
+            <caption>요안도라 객실</caption>
+            <thead>
+            <tr> <!--필드명-->
+                <th>방이름</th>
+                <th>대상</th>
+                <th>크기</th>
+                <th>가격</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr> <!--1행-->
+                <th>유채방</th>
+                <td>여성 도미토리</td>
+                <td rowspan="3">4인실</td>
+                <td rowspan="4">1인 20,000원</td>
+            </tr>
+            <tr> <!--2행-->
+                <th rowspan="2">동백방</th>
+                <td>동성 도미토리</td>
+                
+        
+            </tr>
+      
+            <tr> <!--3행-->
+            <th>가족1팀</th>
+            <td> - </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+        </tbody>
+        <tfoot>
+            <tr></tr>
+        </tfoot>
+        </table>
+        
+        <table border="1">
+            <caption>1인당 연간 설탕 소비량 
+                <small>(단위:kg)</small></caption>
+            <colgroup>
+                <col style="background-color: #eee;">
+                <col>
+            </colgroup>
+            <tr>
+                <th>WHO권장량</th>
+                <td>18.25</td>
+            </tr>
+            
+            <tr>
+                <th>한국</th>
+                <td>22</td>
+            </tr>
+            
+            <tr>
+                <th>중국</th>
+                <td>25</td>
+            </tr>
+
+            <tr>
+                <th>싱가포르</th>
+                <td>58</td>
+            </tr>
+
+            <tr>
+                <th>미국</th>
+                <td>33</td>
+            </tr>
+
+            <tr>
+                <th>브라질</th>
+                <td>69</td>
+            </tr>
+
+            <tr>
+                <th>세계평균</th>
+                <td>23</td>
+            </tr>
+        </table>
+    </body>
+</html>

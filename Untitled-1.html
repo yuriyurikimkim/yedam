@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8"
+        <title>포지션</title>
+        <style>
+            #wrap{
+                position: relative;
+                width: 300px;
+                height: 300px;
+                border: 1px solid #ccc;
+            }
+            .box{
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                background-color: #0094ff;
+            }
+            #crd1{
+                top:0;
+                left: 0;
+            }
+            #crd2{
+                top:0;
+                right: 0;
+            }
+            #crd3{
+                left:0;
+                bottom: 0;
+            }
+            #crd4{
+                right:0;
+                bottom:0;
+            }
+            #crd5{
+                left:100px;
+                top:100px;
+                z-index: 999;
+            }
+            #crd6{
+                left:120px;
+                top:120px;
+                background-color: red;
+                visibility: visible;
+            }
+            #crd7{
+                left:80px;
+                top:140px;
+                line-height: 50px;
+                text-align: center;
+                background-color: blueviolet;   
+                opacity: 0.5;    
+            }
+            #fix{
+                width: 150px;
+                height: 100px;
+                color: #fff;
+                background-color: blue;
+                position: fixed;
+                right: 50px;
+                top: 100px;
+                text-align: center;
+                line-height: 70px;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+    <div id="wrap">
+        <div class="box" id="crd1">박스1</div>
+        <div class="box" id="crd2">박스2</div>
+        <div class="box" id="crd3">박스3</div>
+        <div class="box" id="crd4">박스4</div>
+        <div class="box" id="crd5">박스5</div>
+        <div class="box" id="crd6">박스6</div>
+        <div class="box" id="crd7">박스7</div>
+    </div>
+    <div id="fix">
+        <p>고정된 요소</p>
+    </div>
+    </body>
+</html>
+

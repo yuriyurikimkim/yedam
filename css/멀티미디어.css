@@ -1,0 +1,12 @@
+*{
+    font-family: 굴림;
+}
+h1{
+    color: red;
+}
+section h3{
+    color: blue;
+}
+footer h3{
+    background-color: yellow;
+}
