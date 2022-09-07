@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        h1{
+            margin-left: 10px;
+        }
+        p{
+            margin-left: 10px;
+        }
+        body{
+            padding: 20px;
+        }
+        form ul{
+            list-style: none;
+        }
+        form li{
+            margin-bottom: 10px;
+        }
+        fieldset{
+            border: 0px;
+            margin-bottom: 10px;
+            width: 650px;
+            list-style: none;
+            margin-left: 10px;
+        }
+        legend{
+            font-weight: bold;
+            color: blue;
+        }
+        .A label{
+           width: 80px;
+           float:left
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>국제 개발자 지원서</h1>
+    <p>HTML, CSS, javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다. </p>
+    <hr>
+    <form action="abc.jsp" method="post">
+        <fieldset class="A">
+            <legend>개인정보</legend>
+            <ul>
+                <li><label for="name">이름</label> 
+                    <input id="name" type="text" placeholder="공백 없이 입력하세요"> </li>
+                <li><label for="tel">연락처</label>
+                    <input id="tel" type="tel"> </li>
+            </ul>
+        </fieldset>
+        <fieldset class="B">
+            <legend>지원분야</legend>
+            <ul>
+                <li><input type="radio" name="giwon" value="publish" checked><label>웹 퍼블리싱</label></li>
+                <li><input type="radio" name="giwon" value="develop" ><label>웹 애플리케이션 개발</label> </li>
+                <li><input type="radio" name="giwon" value="environment"><label>개발 환경 개선</label> </li>
+            </ul>
+        </fieldset>
+        <fieldset class="C">
+            <legend>지원 동기</legend>
+            <ul>
+                <textarea cols="60" rows="5"placeholder= "지원 동기 간략히 써 주세요"></textarea> 
+                <li><button type="submit">접수하기</button>
+                <button type="reset">다시쓰기</button></li>
+            </ul>
+        </fieldset>
+       
+    </form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>선택목록</title>
+    <style>
+        body{
+            width: 900px;
+            margin: 10px auto;
+        }
+        form{
+            background-color: #ddd;
+            padding: 10px;
+            width: 400px;
+        }
+        form label{
+            width: 160px;
+            float: left;
+            line-height: 40px; 
+        }
+        select{
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        input{
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>여름방학 특강 신청</h1>
+    <form action="abc.jsp" method="post">
+
+        <label for="s_hak">학과</label>
+        <select id="s_hak">
+            <optgroup label="공과대학">
+                <option value="archi">건축공학과</option>
+                <option value="mechanic">기계공학과</option>
+                <option value="indust">산업공학과</option>
+                <option value="elec">전기전자공학과</option>
+                <option value="computer" selected>컴퓨터공학과</option>
+                <option value="chemical">화학공학과</option>
+            </optgroup>
+            <optgroup label="인문대학">
+                <option value="history">사학과</option>
+                <option value="lang">어문학부</option>
+                <option value="philo">철학과</option>
+            </optgroup>
+        </select>
+        <br>
+        <label for="b_hop">관심분야(영어)</label>
+        <input id="b_hop" type="text" list="engchoi">
+            <datalist id="engchoi">
+                <option value="grammer" label="문법"></option>
+                <option value="voca" label="어휘"></option>
+                <option value="speaking" label="회화"></option>
+                <option value="listening" label="리스닝"></option>
+                <option value="news" label="뉴스청취"></option>
+            </datalist>
+    </form>
+    
+</body>
+</html>

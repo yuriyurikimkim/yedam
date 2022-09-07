@@ -1,0 +1,101 @@
+body{
+    width: 800px;
+    margin: 0 auto;
+}
+header{
+    background-color: rgb(250,90,120);
+    /* overflow: hidden; */
+    height:100px;
+}
+header img{
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    float:left;
+}
+nav{
+    width: 600px;
+    float: right;
+    margin-top: 24px;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin-right: 20px;
+}
+/* nav a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+} */
+a:link, a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+li:hover{
+    background-color: beige;
+}
+li:active{
+    background-color: black;
+}
+nav li:nth-child(2n){
+    background-color: red;
+}
+section{
+    width: 600px;
+    float: left;
+}
+section h1{
+    padding-left: 20px;
+}
+h1::after{
+    content:"긴급";
+    color:red;
+    margin-left: 10px;
+    font-size: 16px;
+    position: relative;
+    top:-10px
+}
+article{
+    width: 263px;
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 10px
+    float: left;
+    margin:5px;
+    float: left;
+}
+#art1:hover{
+    background-color: blue;
+    color: #fff;
+}
+#art2:hover{
+    background-color: black;
+    color:yellow
+}
+article p{
+    text-indent: 16px;
+    text-align: justify;
+}
+
+
+aside{
+    width: 180px;
+    float: right;
+    margin-top: 72px;
+}
+aside img{
+    width: 180px;
+    height: 195px;
+}
+footer{
+    clear: both;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(29,45,90);
+    font-style: italic;
+    font-weight: bold;
+}
